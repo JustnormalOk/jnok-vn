@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../logos/logo.png"> <!-- Website Tab Logo -->
+    <title>Tap water in America video</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: left;
+            padding: 5% 15%;
+        }
+
+        .container {
+            max-width: 750px;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 750px;
+            aspect-ratio: 16 / 9;
+            background: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* CREDITS SECTION */
+        .credits {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #bbb;
+            text-align: left;
+            max-width: 750px;
+            width: 100%;
+        }
+
+        .credits a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .credits a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Tap water in America</h1>
+
+        <div class="video-container">
+            <video id="video" src="video.mp4" controls></video>
+        </div>
+
+        <!-- CREDITS SECTION -->
+        <div class="credits">
+            <p>Người tạo ra: <a href="https://www.youtube.com/shorts/NVJ9gGtNZFc" target="_blank">@waterdoctor.official</a></p>
+            <p>Website bởi: <a href="https://justnormalok.space" target="_blank">JustnormalOk</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
