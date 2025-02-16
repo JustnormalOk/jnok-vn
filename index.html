@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web của JustnormalOk</title>
+    <link rel="icon" type="image/png" href="logos/logo.png"> <!-- Website Tab Logo -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111; /* DARK MODE */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: left;
+            padding: 5% 15%;
+        }
+        .container {
+            max-width: 750px;
+            width: 100%;
+        }
+        .press-release {
+            font-size: 0.9em;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 5px;
+        }
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .description {
+            font-size: 15px;
+            color: #ccc;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+        .text-content {
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .card {
+            background: #222;
+            border-radius: 12px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            width: 280px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card img {
+            width: 270px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .card-content {
+            flex: 1;
+        }
+        .card h2 {
+            font-size: 1.1em;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        .card p {
+            font-size: 11px;
+            color: #bbb;
+        }
+        /* Make entire card clickable */
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        /* Remove ugly purple color after clicking */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:visited {
+            color: inherit;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* FOOTER STYLES */
+        /* FOOTER STYLES */
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .footer a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer img {
+            width: 40px; /* Adjust size if needed */
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .footer img:hover {
+            transform: scale(1.1);
+        }
+        .bottom-link {
+            color: gray; /* Chữ trắng */
+            font-size: 15px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: light;
+            transition: all 0.3s ease;
+            position: absolute;
+            bottom: -700px; /* Cách mép dưới 20px */
+            left: 50%;
+            transform: translateX(-50%); /* Căn giữa theo chiều ngang */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-content"> 
+            <h1 class="title">Web của JustnormalOk</h1>
+            <p class="press-release">PRESS RELEASE<br>Ngày 9 tháng 2 năm 2025</p>
+
+            <p class="description">
+                Cảm ơn những bạn nào mà hôm nay đi vào website của mình, vì website này có
+                những điều lạ mà mình không biết nói sao nữa. Kiểu là web này có những meme
+                mà mình chọn, và mình thấy nó khá là vui vui vui. Một lúc tôi có thể cập nhật
+                web này nếu ai có thắc mắc.
+            </p>
+
+            <p class="description">
+                Dù sao thì, bạn có biết rằng trang web này vẫn còn mới không? Ý tôi là, tôi vừa mới tạo trang web này
+                và nó khá mới mẻ đối với tôi. Tôi chỉ chọn hai meme ở đây— 
+                meme đầu tiên là **Bad Apple** và meme cuối cùng là **smoking PC**. 
+            </p>
+
+            <p class="description">
+                Ồ khoan đã, còn nữa! Tôi cũng đã tạo một **bài kiểm tra toán**, và nó thực sự rất vui khi chơi,
+vì vậy tôi không biết điều gì sẽ xảy ra nếu bạn chơi nó... 👀 Và bất kỳ điều gì khác, tôi chỉ
+quá lười để giải thích mọi thứ, vậy mọi thứ khác? Bạn có thể tự mình kiểm tra.
+            </p>
+
+            <p class="description">
+                Vì vậy, tôi hy vọng bạn thích trang web của tôi và chúc bạn có một ngày tuyệt vời!
+            </p>
+        </div>
+
+        <!-- CLICKABLE CARDS THAT NAVIGATE TO OTHER PAGES -->
+        <div class="cards-container">
+            <a href="bad-apple/bad-apple.html">
+                <div class="card">
+                    <img src="images/bad-apple.png" alt="Bad Apple video">
+                    <div class="card-content">
+                        <h2>Bad Apple Video</h2>
+                        <p>Coi video bad apple</p>
+                    </div>
+                </div>
+            </a>
+            <a href="smoke-pc/smoke-pc.html">
+                <div class="card">
+                    <img src="images/smoke-pc.png" alt="Smoke PC video">
+                    <div class="card-content">
+                        <h2>Smoke PC video</h2>
+                        <p>Một con PC đang bóc khói</p>
+                    </div>
+                </div>
+            </a>
+            <a href="math-quiz/math-quiz.html">
+                <div class="card">
+                    <img src="images/quiz.png" alt="Math quiz">
+                    <div class="card-content">
+                        <h2>Math Quiz</h2>
+                        <p>Test logic của bạn</p>
+                    </div>
+                </div>
+            </a>
+            <a href="tap-water/tap-water.html">
+                <div class="card">
+                    <img src="images/tap-water.png" alt="Tap water in America">
+                    <div class="card-content">
+                        <h2>Tap Water video</h2>
+                        <p>Cái gì?</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- FOOTER WITH SOCIAL MEDIA LINKS -->
+        <div class="footer">
+            <p>Kết nối với tôi:</p>
+            <a href="https://www.tiktok.com/@justnormal_o" target="_blank">
+                <img src="logos/tiktok.jpg" alt="TikTok">
+            </a>
+            <a href="mailto:desk@justnormalok.space">
+                <img src="logos/mail.png" alt="Email">
+            </a>
+            <a href="https://www.youtube.com/@justnormal_o" target="_blank">
+                <img src="logos/youtube.webp" alt="YouTube">
+            </a>
+            <a href="https://justnormalok.space" target="_blank" class="bottom-link">
+                English Version: justnormalok.space
+            </a>
+        </div>
+    </div>
+</body>
+</html>
